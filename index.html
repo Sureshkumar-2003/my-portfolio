@@ -15,12 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- ============================ Heaader start========================================== -->
-    <header>
+    <header  data-aos="fade-up" data-aos-duration="1000">
 
-      <div class="top-email">
+      <div class="top-email" data-aos="fade-right" data-aos-duration="500">
 
         <div class="top-icon">
 
@@ -39,7 +42,7 @@
           </div>
 
 
-          <div class="number top-content">
+          <div class="number top-content" data-aos="fade-left" data-aos-duration="500">
             <div class="email-icon">
 
              <i class="fa-solid fa-phone"></i>
@@ -100,7 +103,7 @@
 
     <main>
       <section class="home" id="home ">
-        <div class="home-left">
+        <div class="home-left"  data-aos="fade-right" data-aos-duration="1000">
           <h1>Hi, I am</h1>
           <h1>Suresh k</h1>
           <h3>I am a</h3>
@@ -123,7 +126,7 @@
           </div>
         </div>
 
-        <div class="home-right">
+        <div class="home-right" data-aos="fade-left">
           <div class="home-img">
             <img src="image/hlo.png" alt="img" />
           </div>
@@ -134,12 +137,12 @@
 
       <section class="main-skill" id="skill">
         <div class="skil-head head">
-          <h1>Skills</h1>
+          <h1 data-aos="fade-right">Skills</h1>
 
-          <p>Here are some of my skills on which i have learnt.</p>
+          <p data-aos="fade-left">Here are some of my skills on which i have learnt.</p>
         </div>
 
-        <div class="all-skills">
+        <div class="all-skills" data-aos="fade-right" >
           <div class="lft-skill tool">
             <h1>Frontend</h1>
 
@@ -206,7 +209,7 @@
             </div>
           </div>
 
-          <div class="rgt-tools tool">
+          <div class="rgt-tools tool" data-aos="fade-left" data-aos-duration="1000">
             <h1>Tools</h1>
 
             <div class="tools-skil tools">
@@ -263,14 +266,14 @@
       <!-- ====about start==== -->
 
       <section class="about-container" id="education" >
-        <div class="abt-head head" >
+        <div class="abt-head head"  data-aos="fade-up">
           <h1>Education</h1>
         </div>
 
         <div class="education-details">
           <!-- school  -->
 
-          <div class="education">
+          <div class="education" data-aos="fade-right" >
             <div class="con-logo">
               <i class="fa-solid fa-school"></i>
               <h2>2019-2020</h2>
@@ -285,7 +288,7 @@
 
           <!-- college -->
 
-          <div class="education">
+          <div class="education"  data-aos="fade-up" >
             <div class="con-logo">
               <i class="fa-solid fa-graduation-cap"></i>
               <h2>2020-2023</h2>
@@ -299,7 +302,7 @@
 
           <!-- frontent course -->
 
-          <div class="education">
+          <div class="education"  data-aos="fade-left">
             <div class="con-logo">
               <i class="fa-solid fa-code"></i>
               <h2>2024 ( Frontend Developer Course)</h2>
@@ -318,14 +321,14 @@
 
       <!--================================= project start ======================================= -->
       <section class="project-container" id="project">
-        <div class="project-head head">
+        <div class="project-head head" data-aos="fade-up">
           <h1>Project</h1>
         </div>
 
         <div class="project-card-all">
           <!-- card -1 -->
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-right">
             <div class="project-img">
               <img src="image/html &css .png" alt="project" class="image" />
             </div>
@@ -362,7 +365,7 @@
 
           <!-- card -2 -->
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-right">
             <div class="project-img">
               <img src="image/html&css&boot.png" alt="" class="image" />
             </div>
@@ -400,7 +403,7 @@
 
           <!-- card -3 -->
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-left">
             <div class="project-img">
               <img src="image/javascript.png" alt="" class="image" />
             </div>
@@ -441,7 +444,7 @@
 
           <!-- card -4 -->
 
-          <div class="project-card">
+          <div class="project-card" data-aos="fade-left">
             <div class="project-img">
               <img src="image/bootstrap-img.png" alt="" />
             </div>
@@ -505,12 +508,12 @@
       <!--========================= contact start============================== -->
 
       <section class="contact-container" id="contact">
-        <div class="cantact-head head">
+        <div class="cantact-head head" data-aos="fade-up">
           <h1>Contact</h1>
 
           <div class="contact-over">
             <form class="form-container">
-              <div class="form-title">
+              <div class="form-title" data-aos="fade-up">
                 <h3>Email Me <i class="fa-solid fa-marker"></i></h3>
               </div>
 
@@ -544,7 +547,7 @@
 
       <section class="footer-container">
         <div class="foot-content">
-          <div class="foot-title">
+          <div class="foot-title" data-aos="fade-up">
             <h3>Suresh  k</h3>
           </div>
 
@@ -560,7 +563,7 @@
              </ul>
           </div>
 
-          <div class="social-media">
+          <div class="social-media" >
 
             <div class="foot-icon">
 
@@ -626,5 +629,10 @@
 
     <!-- js link  -->
     <script src="main.js"></script>
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
