@@ -61,3 +61,29 @@ const closeBtn= document.querySelector('#close-btn');
 // )
 
 
+
+// text animation
+
+const text = document.querySelector('.sec-text');
+
+const textLoad =()=>{
+    setTimeout(()=>{
+        text.textContent="FRONT-END DEVELOPER";
+    },0);
+
+    setTimeout(()=>{
+        text.textContent="FREELANCER";
+    },6000);
+
+    setTimeout(()=>{
+        text.textContent="BLOGGER";
+    },12000);
+
+
+
+}
+
+textLoad()
+
+
+setInterval(textLoad,18000);
